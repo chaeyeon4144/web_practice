@@ -1,0 +1,147 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+ul li {
+  list-style: none;
+}
+/* 모달창 */
+/* 큰 레이아웃 */
+.wrap {
+  width: 1200px;
+  height: 700px;
+  background-color: antiquewhite;
+  margin: auto;
+}
+/* 상단 */
+.header {
+  width: 1200px;
+  height: 100px;
+  background-color: aqua;
+  display: flex;
+}
+/* 로고 */
+.logo {
+  width: 200px;
+  height: 100%;
+  background-color: brown;
+  /* line-height: 100px;
+  text-align: center; */
+}
+.logo a img {
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+/* 메뉴 */
+.nav {
+  width: 1000px;
+  height: 100%;
+
+  background-color: blueviolet;
+  position: relative;
+}
+.nav .gnb {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background-color: blue;
+  width: 600px;
+  height: 50px;
+  display: flex;
+}
+/* .gnb li {
+} */
+/* 메인 메뉴 */
+.gnb > li > a {
+  width: calc(600px / 4);
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  background-color: beige;
+}
+/* 서브 메뉴가 전체 나오게 */
+/* .gnb > li:hover > .depth2{
+    display: block;
+} */
+.gnb > li:hover .depth2 {
+  display: block;
+}
+.gnb:hover > li:hover > a {
+  background-color: black;
+  color: #fff;
+}
+/* 서브 메뉴 */
+
+.depth2 {
+  background-color: aqua;
+  text-align: center;
+  display: none;
+}
+.depth2 > li > a {
+  padding: 10px 0;
+}
+.depth2 > li:hover > a {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+/* 비주얼 */
+.slid {
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  background-color: aquamarine;
+}
+.slid-all{
+  height: 300px;
+  width: 100%;
+}
+.slid-all > li {
+  width: 100%;
+  position: absolute;
+  h
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.slid-all > li > a{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slid-all > li > a > img {
+  width: 100%;
+  
+  display: block;
+}
+.slid-all > li > a > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* 콘텐츠 */
+.contents {
+  width: 1200px;
+  height: 200px;
+  background-color: chartreuse;
+}
+/* 하단 */
+.footer {
+  width: 1200px;
+  height: 100px;
+  background-color: chocolate;
+}
